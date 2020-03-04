@@ -1,0 +1,41 @@
+/*
+* sort most specific to least specific top to bottom.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+:root {
+    --light-blue: #328cc1;
+    --dark-blue: #083c5d;
+    --super-dark-blue: #1d2731;
+    --orange: #d98310;
+    --grey: #aaaaaa;
+}
+
+#content-bar {
+    background: var(--orange);
+    width: 200px;
+    height: 80vh;
+}
+
+#header {
+    background: var(--light-blue);
+    width: 100vw;
+    height: 10vh;
+}
+
+#main {
+    background: var(--grey);
+    width: 100vw;
+    height: 80vh;
+}
+
+#footer {
+    background: var(--super-dark-blue);
+    width: 100vw;
+    height: 20vh;
+}
+
+.title > h1 {
+    font-family: 'Roboto Mono', monospace;
+}
