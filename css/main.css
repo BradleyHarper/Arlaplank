@@ -10,6 +10,9 @@
     --super-dark-blue: #1d2731;
     --orange: #d98310;
     --grey: #aaaaaa;
+    /*note the space between the orange bar and the book card / book card and right edge of the screen.
+    keep them both the same!*/
+    --grid-gap: 20px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -17,6 +20,8 @@ h1, h2, h3, h4, h5 {
 }
 
 #content-bar {
+    /*the orange area*/
+    grid-area: contentBar;
     background: var(--orange);
     word-break: break-word;
     width: 200px;
@@ -32,6 +37,11 @@ h1, h2, h3, h4, h5 {
 }
 
 #main-container {
+    /*the grey area*/
+    display: grid;
+    grid-template-areas: "contentBar bookDisplay";
+    grid-template-columns: 200px auto;
+    grid-column-gap: var(--grid-gap);
     background: var(--grey);
     width: 100%;
     height: 100vh;
@@ -44,6 +54,33 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     height: auto;
     text-align: center;
+}
+
+#main-book-display {
+    /*the white area*/
+    margin-top: var(--grid-gap);
+    grid-area: bookDisplay;
+    background-color: white;
+    width: calc(100% - var(--grid-gap));
+    height: 600px;
+
+    /*multiple different ways to declare box shadow to ensure it works on most* browsers*/
+    -webkit-box-shadow: -4px 10px 9px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 10px 9px -6px rgba(0,0,0,0.75);
+    box-shadow: -4px 10px 9px -6px rgba(0,0,0,0.75);
+}
+
+.book-cover {
+    background-color: white;
+}
+
+#main-book-display > img {
+    border: var(--light-blue) 5px solid;
+    height: 250px;
+    width: 250px;
+    border-radius: 135px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .book-title > h3 {
