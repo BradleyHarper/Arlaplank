@@ -1,0 +1,22 @@
+{
+  "name": "hack-2-bookstore",
+  "version": "1.0.0",
+  "description": "Write *less*, accomplish **more**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradleyHarper/Arlaplank.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BradleyHarper/Arlaplank/issues"
+  },
+  "homepage": "https://github.com/BradleyHarper/Arlaplank#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
