@@ -12,10 +12,15 @@
     --grey: #aaaaaa;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Mono', monospace;
+}
+
 #content-bar {
     background: var(--orange);
+    word-break: break-word;
     width: 200px;
-    height: 80vh;
+    height: 100%;
 }
 
 #header {
@@ -26,19 +31,37 @@
     height: 10vh;
 }
 
-#main {
+#main-container {
     background: var(--grey);
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 
 #footer {
     background: var(--super-dark-blue);
     width: 100%;
     height: 20vh;
+    text-align: center;
+}
+
+.book-title > h3 {
+    margin: 0;
+}
+
+.footer-main > h3 {
+    margin: 0;
+    color: whitesmoke;
+}
+
+.footer-main > h5 {
+    color: whitesmoke;
+}
+
+.footer-main > small > h5 {
+    color: var(--orange);
 }
 
 .title > h1 {
-    font-family: 'Roboto Mono', monospace;
     font-size: 3em;
+    color: var(--super-dark-blue);
 }
