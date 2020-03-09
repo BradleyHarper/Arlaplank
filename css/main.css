@@ -108,6 +108,8 @@ h1, h2, h3, h4, h5 {
 
 #main-book-display > img {
     border: var(--light-blue) 5px solid;
+    /*below allows the words to wrap around the imagle as if its a circle. remove to see what the "square" image looks like*/
+    shape-outside: circle();
     float: left;
     height: 250px;
     width: 250px;
