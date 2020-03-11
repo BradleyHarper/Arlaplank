@@ -6,14 +6,14 @@ Change directories to the freshly cloned Arlaplank
 
 ```cd Arlaplank```
 
-when you ```ls``` to list contents of the directory you should see package.json, index.html, etc...
+When you ```ls``` to list contents of the directory you should see package.json, index.html, etc...
 
-install dependencies by running...
+Install dependencies by running...
 
 ```npm install```
 
 After the download is finished run...
 
-```live-server .```
+```npm run start```
 
-open the echoed url and port in your terminal in chrome and you're done!
+A browser window should open displaying the project, enjoy!
