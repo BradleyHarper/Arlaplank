@@ -64,12 +64,9 @@ function setupSidebar()
             slug: book.slug
         };
     });
-
-
 }
 
 function render() {
-
     setupBooks();
     setupSidebar();
 
@@ -81,6 +78,7 @@ function render() {
             const bookElement = template.content.cloneNode(true);
             bookElement.getElementById('title-span').textContent = book.title;
             bookElement.getElementById('description-span').textContent = book.description;
+            bookElement.querySelector('img').setAttribute('src', book.coverImageUrl);
             parentElement.appendChild(bookElement);
         });
     }
