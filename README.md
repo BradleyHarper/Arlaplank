@@ -1,4 +1,4 @@
-# Arlaplank
+# Bookstore Hack Night 2
 Write *less*, accomplish **more**.
 
 ## Setup
