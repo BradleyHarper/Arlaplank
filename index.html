@@ -21,31 +21,7 @@
 <!--a big ole grey div to contain them all! (not the header and footer though)-->
 <div id="main-container">
     <!--below is the orange bar on the left-->
-    <section id="content-bar">
-        <div class="book-content">
-            <div class="bar-title">
-                <h3>"I Am An Average Book Title"</h3>
-            </div>
-            <div class="bar-description">
-                <!--use a ul if you'd like. it doesn't matter I'm just demoing what the content of the side bar will be-->
-                <h5>
-                    Pages:
-                </h5>
-                <h5>
-                    Illustrator:
-                </h5>
-                <h5>
-                    Genre:
-                </h5>
-                <h5>
-                    Details:
-                </h5>
-                <h5>
-                    Misc:
-                </h5>
-            </div>
-        </div>
-    </section>
+    <section id="content-bar"></section>
     <!--below is the white content section on the right-->
     <section id="main-book-display"></section>
 </div>
@@ -84,6 +60,22 @@
         </small>
     </div>
 </div>
+<template id="section-template">
+    <div class="book-content">
+        <div class="bar-title">
+            <h3>"I Am An Average Book Title"</h3>
+        </div>
+        <div class="bar-description-links">
+            <ul>
+                <li>Pages:</li>
+                <li>Illustrator:</li>
+                <li>Genre:</li>
+                <li>Details:</li>
+                <li>Misc:</li>
+            </ul>
+        </div>
+    </div>
+</template>
 <template id="book-template">
     <div class="book-card">
         <img src="https://cdn.pixabay.com/photo/2018/07/01/20/01/book-3510326_960_720.jpg" alt="A book cover image is supposed to be here">
@@ -100,16 +92,6 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Accusamus ad alias cumque error ipsam ipsum magni maxime odio quasi, similique soluta velit vitae voluptatum.
                 Accusamus odio porro quam totam ut?
-            </h3>
-        </div>
-        <div class="card-summary">
-            <h3>
-                This is where you would give a brief overview of the book. kinda like how the back of a book gives you
-                a preview of what you're about to read. Except in your own words... Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquam assumenda blanditiis distinctio doloremque dolorum,
-                eius error eum ipsam labore molestiae necessitatibus officia officiis omnis ratione rem rerum sunt tempore tenetur.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dignissimos dolor eveniet facere id inventore libero magnam,
-                necessitatibus nesciunt obcaecati possimus quasi quibusdam ratione recusandae rerum, similique sunt ullam ut.
             </h3>
         </div>
     </div>
