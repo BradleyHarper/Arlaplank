@@ -26,17 +26,19 @@ function setupBooks() {
     );
 
     books.push(youDontKnowJS);
+    books.push(new Book('aksdfj', 'asdfasdf'));
 }
 
 function render() {
     setupBooks();
 
-    const parentElement = document.getElementById('main-container');
+    const parentElement = document.getElementById('main-book-display');
     const template = document.getElementById('book-template');
 
     if(books.length > 0) {
         books.forEach(book => {
-            const bookElement = template.cloneNode(true);
+            console.log( 'book', book );
+            const bookElement = template.content.cloneNode(true);
             parentElement.appendChild(bookElement);
         });
     }
